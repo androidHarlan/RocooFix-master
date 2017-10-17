@@ -218,3 +218,13 @@ rocoo_fix {
 
 
 [1]:https://github.com/jasonross/Nuwa/issues/65
+
+
+
+阅读该文章前，请先参考开源项目：https://github.com/dodola/HotFix，详细阅读打包步凑，我将详细补充其1、2两个步凑的注意细节，补充如下：
+
+1.将补丁类提取出来到一个文件夹里 
+注意：这里的“补丁类”指你修改后的类经过编译后生成的class文件；“文件夹”必须与原项目的包结构一样，并将补丁类放入相应位置；
+
+2.将class文件打入一个jar包中 jar cvf path.jar * 
+注意：执行该命令时，确保当前目录下，仅有需要打包为dex的完整目录文件；
