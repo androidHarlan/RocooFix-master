@@ -228,3 +228,6 @@ rocoo_fix {
 
 2.将class文件打入一个jar包中 jar cvf path.jar * 
 注意：执行该命令时，确保当前目录下，仅有需要打包为dex的完整目录文件；
+
+
+或者参考http://www.jianshu.com/p/ea81f7621229打包详情
